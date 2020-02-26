@@ -1,5 +1,6 @@
 import React from 'react';
 import { axiosWithAuth } from '../utils/axiosWithAuth';
+import { Link } from 'react-router-dom';
 
 
 class Login extends React.Component {
@@ -38,6 +39,7 @@ class Login extends React.Component {
     render() {
         return (
             <div>
+                <Link to='/'>Home</Link>
                 <form onSubmit={this.login}>
                     <label htmlFor="username"></label>
                     <input type="text" onChange={this.handleChanges} name="username" value={this.state.credentials.username} placeholder="username" />
