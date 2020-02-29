@@ -1,0 +1,50 @@
+.friends-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2% 0;
+
+    a {
+        font-size: 1.25rem;
+        text-decoration: none;
+        padding: 0 2rem;
+    }
+}
+
+.add-user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button {
+        padding: 1rem 1.25rem;
+        border-radius: 10px;
+
+        &:hover {
+            cursor: pointer;
+            background-color: papayawhip;
+            transition: 0.5s ease-in-out;
+        }
+    }
+}
+
+.friend-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 3rem;
+
+}
+
+.friend-card {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 1.5rem auto;
+    border: 1px solid black;
+    padding: 5% 10%;
+
+    .card-heading {
+        font-weight: bold;
+    }
+}
